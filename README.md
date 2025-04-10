@@ -14,13 +14,14 @@ Cashmonk is a clean and responsive Android application that allows users to earn
 
 ## 📸 Screenshots
 
-*(You can add screenshots here from your app once pushed to GitHub)*
+
 
 ## 🛠 Tech Stack
 
 - **Language:** Java
 - **UI Design:** XML 
 - **IDE:** Android Studio
+
 
 ## 🚀 Getting Started
 
