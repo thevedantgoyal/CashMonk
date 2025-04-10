@@ -26,13 +26,11 @@ public class SplashScreen extends AppCompatActivity {
 
         new Handler().postDelayed(() -> {
             if (mAuth.getCurrentUser() != null) {
-                // User is already signed in
                 startActivity(new Intent(SplashScreen.this, MainActivity.class));
             } else {
-                // User not signed in, go to intro/login
                 startActivity(new Intent(SplashScreen.this, IntroActivity.class));
             }
             finish();
-        }, 3000); // 3 seconds delay
+        }, 3000);
     }
 }

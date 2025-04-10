@@ -25,7 +25,7 @@ public class IntroFragment1 extends Fragment {
         image2.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), LoginActivity.class);
             startActivity(intent);
-            requireActivity().finish(); // Optional: prevent back to onboarding
+            requireActivity().finish();
         });
         return view;
     }
