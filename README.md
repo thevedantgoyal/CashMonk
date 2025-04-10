@@ -14,13 +14,13 @@ Cashmonk is a clean and responsive Android application that allows users to earn
 
 ## 📸 Screenshots
 <div style="display: flex; gap: 10px;">
-<img src="https://github.com/thevedantgoyal/CashMonk/blob/main/CashMonk1.jpeg?raw=true" width="300" height="500"/>
+<img src="https://github.com/thevedantgoyal/CashMonk/blob/main/CashMonk1.jpeg?raw=true" width="300" height="600"/>
 
-<img src="https://github.com/thevedantgoyal/CashMonk/blob/main/cashmonk2.jpeg?raw=true" width="300" height="500"/>
+<img src="https://github.com/thevedantgoyal/CashMonk/blob/main/cashmonk2.jpeg?raw=true" width="300" height="600"/>
 
-<img src="https://github.com/thevedantgoyal/CashMonk/blob/main/cashmonk3.jpeg?raw=true" width="300" height="500"/>
+<img src="https://github.com/thevedantgoyal/CashMonk/blob/main/cashmonk3.jpeg?raw=true" width="300" height="600"/>
 
-<img src="https://github.com/thevedantgoyal/CashMonk/blob/main/cashmonki4.jpeg?raw=true" width="300" height="500"/>
+<img src="https://github.com/thevedantgoyal/CashMonk/blob/main/cashmonki4.jpeg?raw=true" width="300" height="600"/>
 </div>
 
 ## 🛠 Tech Stack
