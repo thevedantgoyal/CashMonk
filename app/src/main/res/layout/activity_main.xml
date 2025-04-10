@@ -1,0 +1,813 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:overScrollMode="always">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+<!--        // profile-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/image_1"
+                android:background="@drawable/bg_profile_rounded"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/coinCard"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingHorizontal="16dp"
+                android:background="@drawable/bg_coin_card"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/set_3d_gold_coins_featuring_various_designs_including_plain_square_dollar_sign_symbols_1" />
+
+                <TextView
+                    android:id="@+id/tvCoinCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="512"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        tabs-->
+        <LinearLayout
+            android:id="@+id/tabContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:background="@drawable/bg_tabs_container"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tabRecyclerView"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+        </LinearLayout>
+
+<!--        days streak-->
+        <LinearLayout
+            android:id="@+id/days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/bg_tabs_container"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="62dp"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_day_normal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/_d_cartoon_fire_with_smile_realistic_3d_high_quality_isolated_render__2_" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Day 1"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="62dp"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_day_normal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/_d_cartoon_fire_with_smile_realistic_3d_high_quality_isolated_render__2_" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Day 2"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="62dp"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_day_normal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/_d_cartoon_fire_with_smile_realistic_3d_high_quality_isolated_render__2_" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Day 3"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="61dp"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_day_normal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/_d_cartoon_fire_with_smile_realistic_3d_high_quality_isolated_render__2_" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Day 4"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="61dp"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_day_normal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/_d_cartoon_fire_with_smile_realistic_3d_high_quality_isolated_render__2_" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Day 5"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <FrameLayout android:layout_width="160dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/bg_blue_rounded"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Big Win!"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 6"
+                            android:layout_marginTop="16dp"
+                            android:textSize="12sp"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="84dp"
+                        android:layout_height="68dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginBottom="-2dp"
+                        android:layout_marginEnd="-3dp"
+                        android:src="@drawable/rectangle_39263_7"
+                        />
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:scaleType="center"
+                        android:layout_gravity="end|bottom"
+                        android:src="@drawable/_d_cartoon_fire_with_smile"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="6dp" />
+                </FrameLayout>
+
+                <FrameLayout android:layout_width="160dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="12dp"
+
+                    android:background="@drawable/bg_jackpot"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jackpot!"
+                            android:textSize="14sp"
+
+                            android:textStyle="bold"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 7"
+                            android:layout_marginTop="16dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="84dp"
+                        android:layout_height="68dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginBottom="-2dp"
+                        android:layout_marginEnd="-3dp"
+                        android:src="@drawable/rectangle_39263_8"
+                        />
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="68dp"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="end|bottom"
+                        android:src="@drawable/there_is_yellow_fireball_with_big_smile_it"
+                        android:layout_marginEnd="14dp" />
+                </FrameLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cards"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="18dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="18dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/frame_2147224051"
+                />
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="164dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/frame_2147224052"
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="14dp"
+            android:background="@drawable/bg_mychips_rewards"
+            >
+            <LinearLayout
+                android:id="@+id/textLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MyChips Rewards"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/subtitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play Games and Win"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:id="@+id/subtitleText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="high rewards"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Right side overlapping images -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:layout_centerVertical="true">
+
+                <!-- Background shape image -->
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="112dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/rectangle_39263"
+                    android:scaleType="fitXY"/>
+
+                <!-- Logo on top -->
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/image_107"
+                    android:scaleType="fitCenter"/>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            >
+
+            <FrameLayout android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:background="@drawable/bg_purple_rounded"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Watch &amp; Win"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="6dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Watch video win\nrewards!"
+                        android:textColor="#000000"
+                        android:layout_marginStart="6dp"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <!-- Background image -->
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="88dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="bottom|end"
+                    android:src="@drawable/rectangle_39263_4"
+
+                    android:layout_marginEnd="-17dp"
+                    android:layout_marginBottom="-14dp"/>
+
+                <!-- Foreground TV image -->
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="bottom|end"
+                    android:src="@drawable/kawaii_3d_object_icon_1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="05dp"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="170dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_yellow2"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Watch &amp; Win"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="6dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Watch video win\nrewards!"
+                        android:textColor="#000000"
+                        android:layout_marginStart="6dp"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp" />
+                </LinearLayout>
+
+                <!-- Background image -->
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="88dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="bottom|end"
+                    android:src="@drawable/rectangle_39263_5"
+                    android:layout_marginEnd="-17dp"
+                    android:layout_marginBottom="-14dp"/>
+
+                <!-- Foreground TV image -->
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="bottom|end"
+                    android:src="@drawable/_d_3drendered_cartoon_star_icon_transparent_background"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="05dp"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="14dp"
+            android:background="@drawable/bg_mychips_rewards"
+            >
+            <LinearLayout
+                android:id="@+id/textLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/titleText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top Ranks!"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/subtitleText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play Games and Boost"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:id="@+id/subtitleText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Performance"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <!-- Right side overlapping images -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <!-- Background shape image -->
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/rectangle_39263_2"
+                    android:scaleType="centerCrop"
+                   />
+
+                <!-- Logo on top -->
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/four_different_colored_stars_with_gold_stars_them"
+                    android:scaleType="centerCrop"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="14dp"
+            android:background="@drawable/bg_rewards"
+            >
+            <LinearLayout
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/titleText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Extra Rewards!"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/subtitleText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Download high reward"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:id="@+id/subtitleText10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="app and win coins"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Right side overlapping images -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <!-- Background shape image -->
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/rectangle_39263_3"
+                    android:scaleType="centerCrop"
+                   />
+
+                <!-- Logo on top -->
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/space_explorers_mobile_app"
+                    android:scaleType="centerCrop"/>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rewards every hour"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="24dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30px"
+            />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#FFE899"> <!-- Light yellow -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:scaleType="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/_6d9624a_3896_4dd6_b97f_c5e0d778c69b"
+                            android:contentDescription="Timer Icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3 hours"
+                            android:textColor="#000000"
+                            android:layout_marginTop="8dp"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="31dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_bottom_yellow"
+                            android:gravity="center"
+                            android:text="Unlock"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#FFE899"> <!-- Light yellow -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:scaleType="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/_6d9624a_3896_4dd6_b97f_c5e0d778c69b"
+                            android:contentDescription="Timer Icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12:00:00"
+                            android:textColor="#000000"
+                            android:layout_marginTop="8dp"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="31dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_bottom_yellow"
+                            android:gravity="center"
+                            android:text="Unlock"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck,TextSizeCheck" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#FFE899"
+                    xmlns:android="http://schemas.android.com/apk/res/android"> <!-- Light yellow -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:scaleType="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/_6d9624a_3896_4dd6_b97f_c5e0d778c69b"
+                            android:contentDescription="Timer Icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12:00:00"
+                            android:textColor="#000000"
+                            android:layout_marginTop="8dp"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="31dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/rounded_bottom_yellow"
+                            android:gravity="center"
+                            android:text="Unlock"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

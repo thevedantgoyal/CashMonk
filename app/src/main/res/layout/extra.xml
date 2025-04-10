@@ -1,0 +1,45 @@
+<FrameLayout android:layout_width="148dp"
+    android:layout_height="75dp"
+    android:background="@drawable/bg_blue_rounded"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Big Win!"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day 6"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="84dp"
+        android:layout_height="68dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="-2dp"
+        android:layout_marginEnd="-3dp"
+        android:src="@drawable/rectangle_39263_7"
+        />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="center"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/_d_cartoon_fire_with_smile"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp" />
+</FrameLayout>

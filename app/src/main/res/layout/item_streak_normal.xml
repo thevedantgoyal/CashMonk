@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="72dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/bg_day_normal"
+    android:padding="8dp">
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/_d_cartoon_fire_with_smile_realistic_3d_high_quality_isolated_render__2_" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day 1"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold" />
+</LinearLayout>

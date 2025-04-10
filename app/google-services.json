@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "266156419333",
+    "project_id": "appzest-8d88a",
+    "storage_bucket": "appzest-8d88a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266156419333:android:39b86fa5276a892cfb6f6c",
+        "android_client_info": {
+          "package_name": "com.example.appzest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDacYn_10igdtLewINhMWswk4ARHt0aZhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

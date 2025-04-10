@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Curved Background Shape -->
+        <ImageView
+            android:id="@+id/curveBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/vector_1" />
+
+        <!-- Character Image overlapping -->
+        <ImageView
+            android:id="@+id/characterImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/mask_group" />
+
+        <!-- Text and Button Content -->
+        <LinearLayout
+            android:layout_below="@id/characterImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="Welcome to CashMonk"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Unlock amazing rewards with every"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="#888888"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="step you take! Keep Playing keep"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="#888888"
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="earning!"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="#888888"
+                android:layout_marginTop="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:backgroundTint="#5552FF"
+                android:text="Continue with Google"
+                app:icon="@drawable/group_3"
+                app:iconGravity="textStart"
+                app:iconPadding="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
